@@ -1,0 +1,14 @@
+<div>
+    <div class="categories">
+      <button *ngFor="let category of categories" (click)="selectCategory(category)">{{ category }}</button>
+    </div>
+    <div>
+      <input type="text" [(ngModel)]="searchKeywords" placeholder="Search keywords">
+      <button (click)="search()">Search</button>
+    </div>
+    <div *ngFor="let item of news">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <a [href]="item.url" target="_blank">Read more</a>
+    </div>
+  </div>
