@@ -5,7 +5,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class NewsService {
-  private apiKey = 'Dpj1V7TrBWt2L7I8IsUi9q0TjuRslMoAU8LpF3OEIMaiWXGR'; // Замените на свой API ключ
+  private apiKey = '4nxUXQOE0pOfMktDgthhfgr22SRma-5BNFIpgyzY0E34U4-x'; // Замените на свой API ключ
   private apiUrl = 'https://api.currentsapi.services/v1/latest-news';
 
   async getNews(category: string = '', keywords: string = ''): Promise<any> {
