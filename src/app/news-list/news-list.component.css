@@ -1,0 +1,13 @@
+mat-card {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  mat-card-image {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  mat-form-field {
+    margin-right: 10px;
+  }

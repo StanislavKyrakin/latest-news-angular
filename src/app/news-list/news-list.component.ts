@@ -1,12 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from '../news.service';
-import { CommonModule } from '@angular/common'; // Добавьте эту строку
-import { FormsModule } from '@angular/forms'; // Добавьте эту строку
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-news-list',
   standalone: true,
-  imports: [CommonModule, FormsModule], // Объединенный массив imports
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule,
+    MatToolbarModule
+  ],
   templateUrl: './news-list.component.html',
   styleUrls: ['./news-list.component.css']
 })
